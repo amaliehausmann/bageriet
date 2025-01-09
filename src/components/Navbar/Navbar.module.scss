@@ -1,0 +1,42 @@
+@use '../../styles/variables' as *;
+@use '../../styles/placeholders' as *;
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('../../assets/images/slide1.jpg');
+    background-position: top;
+
+    ul{
+        width: 60%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 3fr 1fr 1fr;
+        align-items: center;
+        justify-content: center;
+        gap: 4px;
+
+        li{
+            list-style: none;
+
+            a{
+                text-decoration: none;
+                color: $white;
+                @extend %opensans;
+                font-weight: 300;
+                font-size: $font-sm;
+            }
+
+            h1{
+                text-align: center;
+                color: $white;
+                font-size: $font-lg;
+                @extend %lobster;
+            }
+        }
+    }
+}
